@@ -15,5 +15,8 @@ system
 
 
 When it comes to the Asset Cash Flow Generation there are two options to chose from. 
-1). Loan level generation
+1). Loan level generation 
+      - Detailed data is avaliable for each asset 
 2). Representative line generation 
+      - A representative line can be thought of as an aggregation of similar loan’s attributes as
+a single loan or line of information.
