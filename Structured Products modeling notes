@@ -32,7 +32,10 @@ pool or they can revolve.
 (Insert process map Figure 2.5)
 
 
-
+-When using a representative line methodology, a notional schedule of amortization needs to be created. 
+The schedule is called notional because it is a hypothetical amortization that does not take into account
+prepayments, defaults, and recoveries. Later, prepayments, defaults, and recoveries
+will use the notional schedule to calculate the actual amortization schedule.
 
 
 
