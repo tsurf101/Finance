@@ -37,8 +37,11 @@ The schedule is called notional because it is a hypothetical amortization that d
 prepayments, defaults, and recoveries. Later, prepayments, defaults, and recoveries
 will use the notional schedule to calculate the actual amortization schedule.
 
-
-
+-The typical interest rate vector will be a projected curve
+of some type and can be obtained a number of ways. Usually a forward
+curve analysis from Bloomberg is sufficient. 
+To meet ratings criteria, a stressed curve constructed by the ratings
+agencies should be used.
 
 
 
