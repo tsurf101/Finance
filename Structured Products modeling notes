@@ -47,7 +47,8 @@ agencies should be used.
 SMM (Single Monthly Mortality) = Dollar amount of period n prepayment/(Beginning of period n current
 balance–Period n scheduled principal payment)
 
-
+CPR (Conditional Prepayment Rate) - The most basic definition of CPR is that it
+is an annualized calculation of SMM.
 
 
 
