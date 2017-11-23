@@ -69,3 +69,5 @@ in the notional schedule multiplied by the monthly prepayment rate (SMM in our c
 
 -As loans approach their final periods they will have to be cleaned up. Defaults take precedence
 in calculations since it is assumed that a defaulted loan will not voluntarily prepay.
+
+-When "average" comes up, using the "weighted average.." is more accruate than a mean due to various loan balances, seasoning, yields, etc. in pools
