@@ -71,3 +71,22 @@ in the notional schedule multiplied by the monthly prepayment rate (SMM in our c
 in calculations since it is assumed that a defaulted loan will not voluntarily prepay.
 
 -When "average" comes up, using the "weighted average.." is more accruate than a mean due to various loan balances, seasoning, yields, etc. in pools
+
+
+-Deliquency, Default, and Loss Analysis 
+
+----Delinquency - When a payment is due on a specific date and the obligor fails
+to pay the payment by that date the obligor is delinquent
+----Default - Often a deliquency eventually becomes a default. When obligors are considered defaulted, they are no longer
+expected to make regular payments and legal action typically begins.
+----Loss - Gross loss is when a companiy writes off the prinicipal balance of the loan, during the time of a default
+
+
+
+
+
+
+
+
+
+
