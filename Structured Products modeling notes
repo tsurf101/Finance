@@ -63,3 +63,6 @@ Prepayments can drastically affect the weighted average life of a transaction an
 thereby reducing the total return of investment (page 69/221) 
 
 -Stressor for prepayments is a numeric multiple that is multiplied against the prepayment curve at each period. 
+
+-The prepayment calculation is the Beginning Balance multiplied by the percentage asset reduction
+in the notional schedule multiplied by the monthly prepayment rate (SMM in our case, workbook)
