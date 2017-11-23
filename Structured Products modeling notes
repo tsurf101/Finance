@@ -43,23 +43,23 @@ curve analysis from Bloomberg is sufficient.
 To meet ratings criteria, a stressed curve constructed by the ratings
 agencies should be used.
 
-Prepayments 
+-Prepayments 
 
-  SMM (Single Monthly Mortality) = Dollar amount of period n prepayment/(Beginning of period n current
+----SMM (Single Monthly Mortality) = Dollar amount of period n prepayment/(Beginning of period n current
 balance–Period n scheduled principal payment)
 
-  CPR (Conditional Prepayment Rate) - The most basic definition of CPR is that it
+----CPR (Conditional Prepayment Rate) - The most basic definition of CPR is that it
 is an annualized calculation of SMM.   CPR = 1 − (1 − SMM)^12
 
-  PSA (Public Securities Association) - hisotrial data on preyment data on mortgages
+----PSA (Public Securities Association) - hisotrial data on preyment data on mortgages
 This is pretty much a predetermined prepament model by the PSA
 
-  ABS (Absolute Prepayment Speed) - ABS = 100∗SMM/(100 + SMM∗(n − 1))
+----ABS (Absolute Prepayment Speed) - ABS = 100∗SMM/(100 + SMM∗(n − 1))
       n = # of periods that have transpired since origination 
       More appropriate measure of prepayment for shorter term asssets such as auto loans
  
-Institutional investors often purchase asset-backed securities with certain tenors and returns in mind. 
+-Institutional investors often purchase asset-backed securities with certain tenors and returns in mind. 
 Prepayments can drastically affect the weighted average life of a transaction and can reduce the overall interest paid,
 thereby reducing the total return of investment (page 69/221) 
 
-
+-Stressor for prepayments is a numeric multiple that is multiplied against the prepayment curve at each period. 
