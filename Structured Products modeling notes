@@ -66,3 +66,6 @@ thereby reducing the total return of investment (page 69/221)
 
 -The prepayment calculation is the Beginning Balance multiplied by the percentage asset reduction
 in the notional schedule multiplied by the monthly prepayment rate (SMM in our case, workbook)
+
+-As loans approach their final periods they will have to be cleaned up. Defaults take precedence
+in calculations since it is assumed that a defaulted loan will not voluntarily prepay.
