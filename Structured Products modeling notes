@@ -89,7 +89,9 @@ for non-payment are classified as defaulted loans. Losses refer to the dollar am
 
 -A complete timing curve should always equal 100%
 
-
+-you can create your own loss or use a preexisting loss curve would be better. For example, Standard Default Assumption (SDA), 
+curves are great proxies to determine loss for mortgage prodcuts and ossaionally other long term assets.
+ --- Further more, the most basica SDA curve is 100% SDA (look up graph online, this is a simple graph, nothing complex)
 
 
 
