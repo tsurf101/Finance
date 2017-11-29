@@ -96,4 +96,11 @@ curves are great proxies to determine loss for mortgage prodcuts and ossaionally
 period of the 100 percent curve, while a 200% SDA curve contains 2x the values for each period of the 100% curve.
 
 -SDA curves are constructured with annual defualt rates so for a general majority of models we would need to convert that rate to a monthly default rate
+ --formula is simple but also can be found on page 101/221
+
+
+
+
+
+
 
