@@ -92,6 +92,7 @@ for non-payment are classified as defaulted loans. Losses refer to the dollar am
 -you can create your own loss or use a preexisting loss curve would be better. For example, Standard Default Assumption (SDA), 
 curves are great proxies to determine loss for mortgage prodcuts and ossaionally other long term assets.
  --- Further more, the most basica SDA curve is 100% SDA (look up graph online, this is a simple graph, nothing complex)
-
+ --- Multiplying or dividing the values of the 100% curve creates variations of the curve. So a 50 percent SDA curve contains 1/2 of the values for each 
+period of the 100 percent curve, while a 200% SDA curve contains 2x the values for each period of the 100% curve.
 
 
