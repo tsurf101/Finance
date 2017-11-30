@@ -98,8 +98,8 @@ period of the 100 percent curve, while a 200% SDA curve contains 2x the values f
 -SDA curves are constructured with annual defualt rates so for a general majority of models we would need to convert that rate to a monthly default rate
  --formula is simple but also can be found on page 101/221
 
-
-
+-The asset pool balance is reduced each period by defaults
+-Examining losses is a great way to correctly size risk-rated tranches and understanding the actual asset. 
 
 
 
