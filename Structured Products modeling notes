@@ -102,8 +102,23 @@ period of the 100 percent curve, while a 200% SDA curve contains 2x the values f
 -Examining losses is a great way to correctly size risk-rated tranches and understanding the actual asset. 
 
 
-Chapter 5
--
+Chapter 5 - Recoveries
+- Net less = Gross Loss amount - Recovery amount
+- Recovery rate = Recovery amount/Grodd Loss amount
+- Loss Severity = Net less/ Gross loss amount
+** Recovery Rate and Loss Severity are inverse concepts 
+- Recovery lag is the length of tie it takes from the default date to the recovery of actual cash
+- Lidquidation expenses are always very significant expenses 
+- Cost of carry is defined as when a loan is considered defaulted there is an itnerst cost to the ousanding loan until
+the asset is liduidated and cash is received. (this is not reported at times)
+-An important point about recoveries is that they are included as cash flow for the
+waterfall, but do not amortize the asset principal.
+
+
+
+
+
+
 
 
 Chapter 6 - Liabilities and the Cash Flow Waterfall
