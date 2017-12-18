@@ -136,7 +136,16 @@ Most transactions are structured so the assets generate more interest than is du
 If there is no excess spread then other sources of credit enchancements are necessary to cover the defaulted amount
 
 
-
+Chapter 7 - Advanced Liability Structures 
+-Loss Prtection is the single most important reason for advanced liability structures 
+-Always look out for triggers in transcations, they could have a powerful impact on the cashflow. 
+-Page 129/221 gives several examples of triggers such as "Negative excess spread", "Deliquency", "Rolling average triggers", etc.
+-Only triggers that need to be modeled are the ones that can be breached when the cash flow is stressed.
+- For most general transactions, Cumulative Default Percentage is going to be the current period's dollar 
+default amount divided by the original balance. AND in order to make it cumulative, you add the prior period'defaulted percentage.
+-Interest rate swaps are the most commonly used type of swap in a structured transaction
+      - All of the amounts are calculated off a notional amortization schedule 
+      - Ex/ Sumple fixed-for-floating interest rate swap 
 
 
 
