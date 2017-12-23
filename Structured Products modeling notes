@@ -141,12 +141,15 @@ Chapter 7 - Advanced Liability Structures
 -Always look out for triggers in transcations, they could have a powerful impact on the cashflow. 
 -Page 129/221 gives several examples of triggers such as "Negative excess spread", "Deliquency", "Rolling average triggers", etc.
 -Only triggers that need to be modeled are the ones that can be breached when the cash flow is stressed.
-- For most general transactions, Cumulative Default Percentage is going to be the current period's dollar 
+-For most general transactions, Cumulative Default Percentage is going to be the current period's dollar 
 default amount divided by the original balance. AND in order to make it cumulative, you add the prior period'defaulted percentage.
 -Interest rate swaps are the most commonly used type of swap in a structured transaction
       - All of the amounts are calculated off a notional amortization schedule 
       - Ex/ Sumple fixed-for-floating interest rate swap 
-
+-Reverve Accounts 
+  -Easiest form of credit enchancement 
+  -Accounts set aside for payments when we have shortfalls. 
+  -If the deal has an amortizing reserve, the amount will decrease as the asset pool balance decreases 
 
 
 
