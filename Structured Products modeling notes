@@ -150,6 +150,10 @@ default amount divided by the original balance. AND in order to make it cumulati
   -Easiest form of credit enchancement 
   -Accounts set aside for payments when we have shortfalls. 
   -If the deal has an amortizing reserve, the amount will decrease as the asset pool balance decreases 
+  -Calculating reimbursements is one the more complicated parts of modeling reserve accounts.
 
 
 
+Useful Excel Function
+-"AND" - returns a TRUE value if ALL the conditions in the formula are true
+-"OR" - returns a TRUE value if ANY of the conditions in the formula are ture
