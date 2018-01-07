@@ -153,6 +153,20 @@ default amount divided by the original balance. AND in order to make it cumulati
   -Calculating reimbursements is one the more complicated parts of modeling reserve accounts.
 -Pro Rata means principal is paid proportionally 
 
+Chapter 8 
+-Performance Analytics
+  -A majirty of parties in a transaction are primarly concerned with yield, loss, and timing of cash flows
+    -This can be determined by calculating monthly yield, bond equivalent yield, duration, and WAL calculations
+  -Monthly Yield 
+    -Used to calculate bond equivalent yield
+    -The disocunt rate that makes the present value of all the cash flow from the asset or to the debt equivalent to the initial principal balance.
+    -For assets, the cashflow that is counted is the 1)yield 2)scheduled amrtization 3)voluntary prepayments 4)recovered principal
+    -For debt, the casfhlow that is counted is the 1)interest 2)principal
+  -Assets - DCF is calculated by summing the voluntary prepayments, amortiization, interest, and receoveries
+      & then divded by the assumed monthly yield raised to the period
+  -Debt - DCF is the same as above by we are summing only interest & principal now
+  
+
 
 Useful Excel Function
 -"AND" - returns a TRUE value if ALL the conditions in the formula are true
