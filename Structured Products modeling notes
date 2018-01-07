@@ -162,12 +162,20 @@ Chapter 8
     -The disocunt rate that makes the present value of all the cash flow from the asset or to the debt equivalent to the initial principal balance.
     -For assets, the cashflow that is counted is the 1)yield 2)scheduled amrtization 3)voluntary prepayments 4)recovered principal
     -For debt, the casfhlow that is counted is the 1)interest 2)principal
+    -The monthly yield should change until the Present Value difference = 0 
   -Assets - DCF is calculated by summing the voluntary prepayments, amortiization, interest, and receoveries
       & then divded by the assumed monthly yield raised to the period
   -Debt - DCF is the same as above by we are summing only interest & principal now
-  
+  -Bond-equivalent yield (BEY), which can be thoguht of as annual yield. There is disagreement between which is the best annual yield measure
+  -Modified Duration - Duration is a measure of a bond value's sensitivity to rate changes
+        -Officially defined by fabozzi as "the approximate percentage change in value for 100 basis point change in rates"
+         1/[(1 + yield/k)]*[[1∗PVCF1 + 2∗PVCF2 +· · ·+n∗PCVCFn]/(k*Price)]
+         k = periods of the payments 
+         n = total period
+         PVCF_t = present value of the cash flow in period t discounted by the yield
 
 
 Useful Excel Function
 -"AND" - returns a TRUE value if ALL the conditions in the formula are true
 -"OR" - returns a TRUE value if ANY of the conditions in the formula are ture
+-GOAL FINDER
