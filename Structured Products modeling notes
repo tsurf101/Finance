@@ -151,7 +151,7 @@ default amount divided by the original balance. AND in order to make it cumulati
   -Accounts set aside for payments when we have shortfalls. 
   -If the deal has an amortizing reserve, the amount will decrease as the asset pool balance decreases 
   -Calculating reimbursements is one the more complicated parts of modeling reserve accounts.
-
+-Pro Rata means principal is paid proportionally 
 
 
 Useful Excel Function
