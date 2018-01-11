@@ -77,17 +77,26 @@ in calculations since it is assumed that a defaulted loan will not voluntarily p
 -When "average" comes up, using the "weighted average.." is more accruate than a mean due to various loan balances, seasoning, yields, etc. in pools
 
 
--Deliquency, Default, and Loss Analysis 
+Chapter 4 Deliquency, Default, and Loss Analysis 
 
 ----Delinquency - When a payment is due on a specific date and the obligor fails
 to pay the payment by that date the obligor is delinquent
 ----Default - Often a deliquency eventually becomes a default. When obligors are considered defaulted, they are no longer
 expected to make regular payments and legal action typically begins.
 ----Loss - Gross loss is when a companiy writes off the prinicipal balance of the loan, during the time of a default
+----Gross loss is the dollar amount of loan balances that are assumed to remain unpaid
 
 Frank J. Fabozzi, defining a loss as follows " A default is essentially a loan that does not get paid back. A loan may
 go into the 90-day delinquent category or even into foreclosure, and still be made current again. So only those loans that are ultimately liquidated
 for non-payment are classified as defaulted loans. Losses refer to the dollar amounts lost on defaulted loans. (page 81/221)
+
+As defined by S&P, why static loss data is preferred:
+"An analysis of static pool data is preferred, since it demonstrates loss
+performance over the full liquidation period of a pool. Static pool data also can provide insight into changing portfolio characteristics, underwriting, or
+collection policies. Movement in such variables may not be readily apparent in dynamic portfolio data because of the constantly changing mix in new and
+aged receivables. Additionally, data based on annual losses can understate loss performance during periods of rapid portfolio growth. When analyzing
+high-growth portfolios, the current period’s losses may be compared against the prior year’s portfolio. This ‘‘growth adjustment’’ takes into account
+that losses on new originations may not happen immediately and, therefore, occur in the next annual period.
 
 -Deliquency is not considered a default 
 
