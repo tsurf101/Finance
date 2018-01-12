@@ -98,6 +98,16 @@ aged receivables. Additionally, data based on annual losses can understate loss 
 high-growth portfolios, the current period’s losses may be compared against the prior year’s portfolio. This ‘‘growth adjustment’’ takes into account
 that losses on new originations may not happen immediately and, therefore, occur in the next annual period.
 
+-Severity is the final cumulative loss percent per vintage. 
+  -How much of the original balance of a particular vintage is assumed to be defaulted and uncollectible
+-Timing - How much loss has been taken by a certain point in time, end at the final maturity of the assets 
+-Loss timing can huge impacts on a model(please see page 90/221)
+  - Front Loading impacts excess spread. 
+  - Example, if a transaction was modeled with a regular loss curve and losses were actaully back-loaded, triggers and 
+  reserve accounts might be inadequate to protect the back-loaded loss
+***WAC Loss Curve can be used as a projected loss curve if no trend is evident and there are years of data 
+
+
 -Deliquency is not considered a default 
 
 -A complete timing curve should always equal 100%
@@ -118,7 +128,7 @@ period of the 100 percent curve, while a 200% SDA curve contains 2x the values f
 Chapter 5 - Recoveries
 - Net less = Gross Loss amount - Recovery amount
 - Recovery rate = Recovery amount/Grodd Loss amount
-- Loss Severity = Net less/ Gross loss amount
+- Loss Severirty = Net less/ Gross loss amount
 ** Recovery Rate and Loss Severity are inverse concepts 
 - Recovery lag is the length of tie it takes from the default date to the recovery of actual cash
 - Lidquidation expenses are always very significant expenses 
