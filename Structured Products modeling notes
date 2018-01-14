@@ -193,6 +193,11 @@ Chapter 8
          n = total period
          PVCF_t = present value of the cash flow in period t discounted by the yield
 
+Analytics
+-Cash In - all cash that is available to pay liabilities
+  - Pretty much consists of voluntary perpayments, scheduled asset amortization, asset yield, recoveries from defaulted assets,
+  swap flows in, and cash from the reserve account 
+-Cash Out - Liabilities
 
 Useful Excel Function
 -"AND" - returns a TRUE value if ALL the conditions in the formula are true
