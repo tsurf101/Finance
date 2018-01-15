@@ -199,6 +199,11 @@ Analytics
   swap flows in, and cash from the reserve account 
 -Cash Out - Liabilities
 
+-A Summary Sheet is great addition to a model as it can quickly report the scenario assumptions were, give a cash flow snpashot,
+and provide any relevant graphs. 
+-WAL calculations does not rely on discounted cash flows, instead a WAL is a calculation based on the amortizaiton
+of the assets and liabilities over time. 
+
 Useful Excel Function
 -"AND" - returns a TRUE value if ALL the conditions in the formula are true
 -"OR" - returns a TRUE value if ANY of the conditions in the formula are ture
