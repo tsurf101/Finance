@@ -1,5 +1,0 @@
-import numpy as np
-import pandas as pd
-
-# This is a plotting library for pretty pictures.
-import matplotlib.pyplot as plt
