@@ -12,6 +12,9 @@ The process of building a cash flow model
   6. Test Model
 
 
+- A mortgage's expected monlthly payment can be thought of as a discounted geomertric series mutipled by the loan amount. 
+  - The summation of the geomertric series is then taken and a simplified solution is expressed. 
+
 -30/360 Day count function in Excel is DAYS360(start date, end date, method)   **Page 11 of PDF
       A. method = true, if the system is European
       B. method = false, if the day count system is U.S./National Association of Securities Dealers (NASD)
