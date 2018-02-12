@@ -1,3 +1,3 @@
 # FIFA
 
-Page used to organize all Quant Material 
+Page used to organize helpful quantative finance Material 
