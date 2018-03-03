@@ -1,5 +1,7 @@
 from nltk import sent_tokenize, word_tokenize, PunktSentenceTokenizer, pos_tag
-from nltk.corpus import stopwordss
+from nltk.corpus import stopwords
+
+#Something to keep in mind, Lemmatizing can be more powerful than stemming at times
 
 """POS tag list:
 
@@ -39,7 +41,7 @@ WP	wh-pronoun	who, what
 WP$	possessive wh-pronoun	whose
 WRB	wh-abverb	where, when"""
 
-example_text = 'Hello Mr. Smith, how are you doing today? Hope all is well! Lets go get some coffee later today. Are you ready?'
+example_text = 'Hello Mr. Smith, how are you doing today? Lets go get some coffee later today at Starbucks.'
 print(sent_tokenize(example_text),'\n')
 
 words = word_tokenize(example_text)
@@ -64,12 +66,15 @@ print('using option 2 ', clean_list2, '\n')
 
 #Speech tagging
 
-custom_sent_tockenizer = PunktSentenceTokenizer(example_text)
+custom_semonsnt_tockenizer = PunktSentenceTokenizer(example_text)
 
 def process_content():
     for i in words:
             words_two = word_tokenize(i)
-            tagged = pos_tag(words_two)
-            print(tagged)
+            tagged_words = pos_tag(words_two)
+            print(tagged_words)
+
+
 
 process_content()
+
