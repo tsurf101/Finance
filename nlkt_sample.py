@@ -1,5 +1,5 @@
 from nltk import sent_tokenize, word_tokenize, PunktSentenceTokenizer, pos_tag
-from nltk.corpus import stopwords, state_union
+from nltk.corpus import stopwordss
 
 """POS tag list:
 
