@@ -1,7 +1,6 @@
 # Reference File for Basic Plotting
 # You'll see similarities here to Matlab plotting with this library
 import numpy as np
-import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 # generating 100 standard normally distributed random numbers as a NumPy ndarray
