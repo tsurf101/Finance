@@ -195,6 +195,10 @@ Chapter 8
          k = periods of the payments 
          n = total period
          PVCF_t = present value of the cash flow in period t discounted by the yield
+  -According to the Fabozzi book, Modified duration (and Macaulay) duration are typically poor measures because they assume that when interest rates change, 
+the cash flow(in particular, prepayments) do not change.
+  -FYI: Effective durations( AKA Option-Adjusted duration) is derived using Monte Carlo simulation for obtaining the new prices when interest rates change.
+
 
 Analytics
 -Cash In - all cash that is available to pay liabilities
