@@ -77,7 +77,8 @@ in the notional schedule multiplied by the monthly prepayment rate (SMM in our c
 -As loans approach their final periods they will have to be cleaned up. Defaults take precedence
 in calculations since it is assumed that a defaulted loan will not voluntarily prepay.
 
--When "average" comes up, using the "weighted average.." is more accruate than a mean due to various loan balances, seasoning, yields, etc. in pools
+-When "average" comes up, using the "weighted average.." is more accruate than a mean due to various loan balances, seasoning,
+yields, etc. in pools
 
 
 Chapter 4 Deliquency, Default, and Loss Analysis 
@@ -90,16 +91,17 @@ expected to make regular payments and legal action typically begins.
 ----Gross loss is the dollar amount of loan balances that are assumed to remain unpaid
 
 Frank J. Fabozzi, defining a loss as follows " A default is essentially a loan that does not get paid back. A loan may
-go into the 90-day delinquent category or even into foreclosure, and still be made current again. So only those loans that are ultimately liquidated
-for non-payment are classified as defaulted loans. Losses refer to the dollar amounts lost on defaulted loans. (page 81/221)
+go into the 90-day delinquent category or even into foreclosure, and still be made current again. So only those loans that
+are ultimately liquidated for non-payment are classified as defaulted loans. Losses refer to the dollar amounts lost on defaulted loans. (page 81/221)
 
 As defined by S&P, why static loss data is preferred:
 "An analysis of static pool data is preferred, since it demonstrates loss
-performance over the full liquidation period of a pool. Static pool data also can provide insight into changing portfolio characteristics, underwriting, or
-collection policies. Movement in such variables may not be readily apparent in dynamic portfolio data because of the constantly changing mix in new and
-aged receivables. Additionally, data based on annual losses can understate loss performance during periods of rapid portfolio growth. When analyzing
-high-growth portfolios, the current period’s losses may be compared against the prior year’s portfolio. This ‘‘growth adjustment’’ takes into account
-that losses on new originations may not happen immediately and, therefore, occur in the next annual period.
+performance over the full liquidation period of a pool. Static pool data also can provide insight into changing portfolio
+characteristics, underwriting, or collection policies. Movement in such variables may not be readily apparent
+in dynamic portfolio data because of the constantly changing mix in new and aged receivables. Additionally, data based on
+annual losses can understate loss performance during periods of rapid portfolio growth. When analyzing
+high-growth portfolios, the current period’s losses may be compared against the prior year’s portfolio. This ‘‘growth adjustment’’
+takes into account that losses on new originations may not happen immediately and, therefore, occur in the next annual period.
 
 -Severity is the final cumulative loss percent per vintage. 
   -How much of the original balance of a particular vintage is assumed to be defaulted and uncollectible
@@ -118,10 +120,12 @@ that losses on new originations may not happen immediately and, therefore, occur
 -you can create your own loss or use a preexisting loss curve would be better. For example, Standard Default Assumption (SDA), 
 curves are great proxies to determine loss for mortgage prodcuts and ossaionally other long term assets.
  --- Further more, the most basica SDA curve is 100% SDA (look up graph online, this is a simple graph, nothing complex)
- --- Multiplying or dividing the values of the 100% curve creates variations of the curve. So a 50 percent SDA curve contains 1/2 of the values for each 
+ --- Multiplying or dividing the values of the 100% curve creates variations of the curve. So a 50 percent SDA curve contains 1/2 of
+     the values for each 
 period of the 100 percent curve, while a 200% SDA curve contains 2x the values for each period of the 100% curve.
 
--SDA curves are constructured with annual defualt rates so for a general majority of models we would need to convert that rate to a monthly default rate
+-SDA curves are constructured with annual defualt rates so for a general majority of models we would need to convert that rate
+ to a monthly default rate
  --formula is simple but also can be found on page 101/221
 
 -The asset pool balance is reduced each period by defaults
@@ -135,7 +139,7 @@ Chapter 5 - Recoveries
 ** Recovery Rate and Loss Severity are inverse concepts 
 - Recovery lag is the length of tie it takes from the default date to the recovery of actual cash
 - Lidquidation expenses are always very significant expenses 
-- Cost of carry is defined as when a loan is considered defaulted there is an itnerst cost to the ousanding loan until
+- Cost of carry is defined as when a loan is considered defaulted there is an interest cost to the ousanding loan until
 the asset is liduidated and cash is received. (this is not reported at times)
 -An important point about recoveries is that they are included as cash flow for the
 waterfall, but do not amortize the asset principal.
@@ -181,23 +185,27 @@ Chapter 8
     -This can be determined by calculating monthly yield, bond equivalent yield, duration, and WAL calculations
   -Monthly Yield 
     -Used to calculate bond equivalent yield
-    -The disocunt rate that makes the present value of all the cash flow from the asset or to the debt equivalent to the initial principal balance.
+    -The disocunt rate that makes the present value of all the cash flow from the asset or to the debt equivalent to the
+     initial principal balance.
     -For assets, the cashflow that is counted is the 1)yield 2)scheduled amrtization 3)voluntary prepayments 4)recovered principal
     -For debt, the casfhlow that is counted is the 1)interest 2)principal
     -The monthly yield should change until the Present Value difference = 0 
   -Assets - DCF is calculated by summing the voluntary prepayments, amortiization, interest, and receoveries
       & then divded by the assumed monthly yield raised to the period
   -Debt - DCF is the same as above by we are summing only interest & principal now
-  -Bond-equivalent yield (BEY), which can be thoguht of as annual yield. There is disagreement between which is the best annual yield measure
+  -Bond-equivalent yield (BEY), which can be thoguht of as annual yield. There is disagreement between which
+   is the best annual yield measure
   -Modified Duration - Duration is a measure of a bond value's sensitivity to rate changes
         -Officially defined by fabozzi as "the approximate percentage change in value for 100 basis point change in rates"
          1/[(1 + yield/k)]*[[1∗PVCF1 + 2∗PVCF2 +· · ·+n∗PCVCFn]/(k*Price)]
          k = periods of the payments 
          n = total period
          PVCF_t = present value of the cash flow in period t discounted by the yield
-  -According to the Fabozzi book, Modified duration (and Macaulay) duration are typically poor measures because they assume that when interest rates change, 
+  -According to the Fabozzi book, Modified duration (and Macaulay) duration are typically poor measures because
+   they assume that when interest rates change, 
 the cash flow(in particular, prepayments) do not change.
-  -FYI: Effective durations( AKA Option-Adjusted duration) is derived using Monte Carlo simulation for obtaining the new prices when interest rates change.
+  -FYI: Effective durations( AKA Option-Adjusted duration) is derived using Monte Carlo simulation for obtaining
+   the new prices when interest rates change.
 
 
 Analytics
