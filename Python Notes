@@ -1,1 +1,11 @@
-File used use a FYI for any Python programming notes
+File used use an FYI for any Python programming notes
+
+Lists
+-Indexed by range of numbers
+-Keys in dictionaries are immmutable objects
+
+Dictionaries
+-Indexed by unique keys
+-Lookup table with unique keys
+
+Numpy arrays can only contain values that are the same datatype
