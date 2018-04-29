@@ -11,5 +11,13 @@ Dictionaries
 Numpy arrays can only contain values that are the same datatype
 
 In Pandas 
-  -loc is label-based
-  -iloc is interger position based
+  -Selecting Data
+    -loc is label-based
+    -iloc is interger position based
+    -you can combine loc & iloc using ix
+  -The single bracket version gives a Pandas Series, the double bracket version gives a Pandas DataFrame.
+  
+
+Remember that for string comparison, Python determines the relationship based on alphabetical order.
+
+For NumpPy arrays you need to use logical_and(), logical_or(), and logical_not() for array comparisions 
