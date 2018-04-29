@@ -9,3 +9,7 @@ Dictionaries
 -Lookup table with unique keys
 
 Numpy arrays can only contain values that are the same datatype
+
+In Pandas 
+  -loc is label-based
+  -iloc is interger position based
