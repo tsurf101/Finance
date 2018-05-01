@@ -21,3 +21,6 @@ In Pandas
 Remember that for string comparison, Python determines the relationship based on alphabetical order.
 
 For NumpPy arrays you need to use logical_and(), logical_or(), and logical_not() for array comparisions 
+
+Avoid while loops if need be, best use is for the below
+  -repeating action until condition is met 
