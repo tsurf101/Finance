@@ -1,4 +1,23 @@
-File used use an FYI for any Python programming notes
+File used use an FYI for any handy Python notes
+
+online data
+-> From pandas_datareader.data import DataReader
+-> From date time import date
+-> DataReader(Series_code, data_cource, start)
+
+Don't forget about pandas concat()
+
+How to read an excel sheet in pandas?
+-> nyse = pd.read_excel('listings.xlsx', sheetname='nyse', na_values='n/a')
+-> nyse = nyse.sort_values('Market Capitalization', ascending=False)
+
+Plotting tips
+-secondary_y attribute for plot will display a column on the right axis with a different scale
+-plt.tight_layout() <- reduces the whitespace
+
+.loc[row_selector, column_selector]
+
+.info() gives you a quick summary
 
 Lists
 -Indexed by range of numbers
