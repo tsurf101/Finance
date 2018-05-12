@@ -45,3 +45,21 @@ Avoid while loops if need be, best use is for the below
   -repeating action until condition is met 
 
 multi-layered numpy arrays need the nditer() method in order for looping  
+
+
+inplace=true attribute in drop() method helps us save memory and avoid creating a new DF
+tight_layout() method is super helpful
+always inspect your data using .info() or similar method 
+
+distplot() method under seaborn module is helpful!! 
+•	the distplot() function in the seaborn package creates a histogram, where data is grouped into ranges and and plotted as bars, and fits a kernel density estimation (KDE), or smoothed histogram. 
+•	You can use distplot() to create another kind of graph called a rugplot, which adds markers at the bottom of the chart to indicate the density of observations along the x axis.
+•	Axvline() method will create  vertical line 
+	E.g. seaborn.displot(data).axvline(data[‘number’].median(), color=’black’, ls=’---‘)
+seaborn.distplot(a, bins=None, hist=True, kde=True, rug=False, ...)
+
+
+pandas offers .dropna() & .fillna() methods 
+use .describe() to check if there a skew in the data between  the mean and 50%, basically checking for fat tails or such
+
+https://fred.stlouisfed.org/ for downloading free online economic data
