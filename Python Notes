@@ -35,6 +35,16 @@ In Pandas
     -iloc is interger position based
     -you can combine loc & iloc using ix
   -The single bracket version gives a Pandas Series, the double bracket version gives a Pandas DataFrame.
+  - DF.Column.nunique() method allows to find how many unique values the column has
+  - In order to get number for unique values for each column do this
+    -df.apply(lambda x: x.nunique())
+    	-here apply is a call function on each column
+	-lambda is an "anonymous function" receiveing each column as argument x
+  -df.column.value_counts() gives you the count of each unique value
+  	e.g. S&P_500_Index['IPO Year'].value_counts() will easily tell me when most IPOs occured and what year
+	e.g. S&P_500_Index['IPO Year'].astype(int).value_counts() will clean up my years into integer values
+  
+	
   
 
 Remember that for string comparison, Python determines the relationship based on alphabetical order.
