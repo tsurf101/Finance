@@ -43,7 +43,9 @@ In Pandas
   -df.column.value_counts() gives you the count of each unique value
   	e.g. S&P_500_Index['IPO Year'].value_counts() will easily tell me when most IPOs occured and what year
 	e.g. S&P_500_Index['IPO Year'].astype(int).value_counts() will clean up my years into integer values
-  
+  -by default Pandas will try to drop rows so if we want to drop column you need to specify axis=1 in the
+   drop method()
+  - Exchange.groupby('Sector) is helpful 
 	
   
 
@@ -73,3 +75,5 @@ pandas offers .dropna() & .fillna() methods
 use .describe() to check if there a skew in the data between  the mean and 50%, basically checking for fat tails or such
 
 https://fred.stlouisfed.org/ for downloading free online economic data
+
+
