@@ -32,3 +32,10 @@ http://sentdex.com/financial-analysis/
 
 How to download free Economic Data
 https://fred.stlouisfed.org/ 
+
+Data Sets
+https://www.quandl.com/tools/api
+-Easy to call via their free API
+-They have some data sets you have to pay for
+-Highly recommend this site as you can find highly bespoke data sets super easily. They do a lot of the dirty work for you so makes 
+your job for analysis easier. 
