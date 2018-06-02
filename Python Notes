@@ -1,5 +1,7 @@
 File used use an FYI for any handy Python notes
 
+good link for refreashers (https://pandas.pydata.org/pandas-docs/version/0.22.0/10min.html)
+
 online data
 -> From pandas_datareader.data import DataReader
 -> From date time import date
