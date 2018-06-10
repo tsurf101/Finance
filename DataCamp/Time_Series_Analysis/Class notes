@@ -1,1 +1,17 @@
+-Changing an index to datetime (quickway)
+df.index = pandas.to_datetime(df.index)
+
+-converting data from daily to weekly can be done using the resample method
+dataframe.resample(rule='w', how='last')
+
+-creating a percent change dataframe
+dataframe['column0'].pct_change()
+
+-creating a diff dataframe
+dataframe['column0'].diff()
+
+
+
+
+
 
