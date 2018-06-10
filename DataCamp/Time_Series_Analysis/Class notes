@@ -1,4 +1,4 @@
--Changing an index to datetime (quickway)
+-Changing an index of strings to datetime (quickway)
 df.index = pandas.to_datetime(df.index)
 
 -converting data from daily to weekly can be done using the resample method
@@ -10,8 +10,16 @@ dataframe['column0'].pct_change()
 -creating a diff dataframe
 dataframe['column0'].diff()
 
+-figuring out the correlation of a series you can use the corr method
+dataframe['column0'].corr(dataframe['column1'])
 
+-determing the autocorrelation
+dataframe['column0'].autocorr()
 
+-syntax for merging 2 dataframes
+df1.join(df2)
 
+Altways be mindful that you should compute the correlations on the percentage changes
+rather than the levels.
 
 
