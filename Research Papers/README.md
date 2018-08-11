@@ -1,1 +1,1 @@
-### Page linking to research articles 
+### Research articles 
