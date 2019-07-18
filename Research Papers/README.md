@@ -1,1 +1,1 @@
-### Research articles & helpful PDF's I came across the way
+### Research articles & helpful resources 
