@@ -9,7 +9,8 @@ The process of building a cash flow model
   3. Construct Basic Framework
   4. Develop Advanced Structure
   5. Validate Assumptions
-  6. Test Model
+  6. Test Model 
+    - (Always run at 0 CPR, O defaults as the bare minimum). Run at least 5/10 scenarios. If you can tie out to WALS you are gold. 
 
 
 - A mortgage's expected monlthly payment can be thought of as a discounted geomertric series mutipled by the loan amount. 
