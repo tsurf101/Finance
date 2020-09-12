@@ -164,8 +164,9 @@ If there is no excess spread then other sources of credit enchancements are nece
 
 
 Chapter 7 - Advanced Liability Structures 
--Loss Prtection is the single most important reason for advanced liability structures 
--Always look out for triggers in transcations, they could have a powerful impact on the cashflow. 
+-Loss Protection is the single most important reason for advanced liability structures 
+- Always look out for triggers in transcations, they could have a powerful impact on the cashflow. 
+- Can use triggers to my prefance in order to win business and lower cost of financings ***** 
 -Page 129/221 gives several examples of triggers such as "Negative excess spread", "Deliquency", "Rolling average triggers", etc.
 -Only triggers that need to be modeled are the ones that can be breached when the cash flow is stressed.
 -For most general transactions, Cumulative Default Percentage is going to be the current period's dollar 
