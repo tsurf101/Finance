@@ -2,7 +2,6 @@
 # Volatility Forcasting Project 
 # 5 initial macroeconomic variables 
 # There is a lot in this workbook that is scratch or exploratory code. There are some areas of the code that are finshed and some that were only done for exploration. 
-setwd("/Users/thomasserafin/Serafin_Documents/Cornell/Fall 2020/ORIE_5254 - Equity Derv **/Project") 
 library(readxl) 
 library(dplyr)
 library(tidyverse)
