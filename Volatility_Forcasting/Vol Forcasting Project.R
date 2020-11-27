@@ -2,6 +2,9 @@
 # Volatility Forcasting Project 
 # 5 initial macroeconomic variables 
 # There is a lot in this workbook that is scratch or exploratory code. There are some areas of the code that are finshed and some that were only done for exploration. 
+# I do want to empthasis that a lot of this code is explororaty purposes and research purposes.
+# This isn't in any particular order and they may be functions or bits of code that don't run. 
+
 library(readxl) 
 library(dplyr)
 library(tidyverse)
@@ -81,7 +84,7 @@ Vol.df.2 <- Vol.df.2 %>% select(-DATE)
 qqplot(Vol.df$Brent_Price, Vol.df$Vix) # to use for presentation 
 qqplot(Vol.df$Spread_10_2yr, Vol.df$Vix) # to use for presentation 
 hist(Vol.df$Vix, col="skyblue") # distribution of outcomes. Add this to my presentaion 
-hist <- hist(Vol.df$Vix, breaks = 20, col="skyblue", xlab = "Vix", main = "Distribution of Outcomes for Vix") # add this to my presentation 
+hist(Vol.df$Vix, breaks = 20, col="skyblue", xlab = "Vix", main = "Distribution of Outcomes for Vix") # add this to my presentation 
 
 mean(Vol.df$Vix)
 # [1] 19.80839
@@ -134,6 +137,18 @@ ggplot(Vol.df, aes(x=Spread_10_2yr, y=Vix)) + geom_point() +
   xlab("10/2yr Spread") + 
   scale_y_continuous(breaks = c(0,10,15,20,25,30,35,40,45,50,55,60,65)) +
   scale_x_continuous(breaks = c(-0.25, 0,0.25,0.5,0.75,1.0, 1.25,1.5,1.75,2.0,2.25,2.5,2.75,3.0))
+
+
+ggplot(Vol.df, aes(x=Fed_Funds_Rate, y=Vix)) + geom_point() + 
+  #stat_smooth(method="lm", color="red", formula = y ~ x, se = FALSE)  + 
+  geom_quantile(color = "red", quantiles = c(0.75, 0.25), size =2, alpha = 0.6) + # plotting the percentiles 
+  geom_quantile(color = "blue", quantiles = c(0.5), size = 2, alpha = 0.6) + 
+  labs(title = "Vix vs. Fed Funds Rate Linear Regression") + 
+  xlab("Fed Funds Rate") + 
+  scale_y_continuous(breaks = c(0,10,15,20,25,30,35,40,45,50,55,60,65)) +
+  scale_x_continuous(breaks = c(0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0))
+
+
 # -----------------------------------------------------------------------
 
 # linear regressions on a shorter time horizon 
@@ -305,8 +320,8 @@ points(c(1:5), cv.error_kfold[,4], type = "b",col="yellow", pch="*") #k=8
 points(c(1:5), cv.error_kfold[,5], type = "b",col="dark red", pch="*") #k=9
 points(c(1:5), cv.error_kfold[,6], type = "b",col="green", pch="*") #k=10
 
-
-ggpairs(data=Vol.df, columns = 2:7)
+ 
+ggpairs(data=Vol.df, columns = 2:7) # nice pretty chart 
 
 # ridge gression 
 x <- model.matrix(Vix~Brent_Price + Fed_Funds_Rate + Spread_10_2yr + Unemployment_Rate + US_Treasury_10yr_rate, Vol.df)[,-1]
@@ -509,7 +524,10 @@ clusters_try2 <- kmeans(as.matrix(Vol.df.outliers_removed_v2$US_Treasury_10yr_ra
 testdata <- cbind.data.frame(Vol.df.outliers_removed_v2$US_Treasury_10yr_rate, Vol.df.outliers_removed_v2$Vix)
 clusters_try3 <- kmeans(as.matrix(testdata[,1]), centers=4, nstart=25)
 
-fviz_cluster(clusters_try3, geom = "point", data = testdata) + ggtitle("k = 2")
+test <- as.matrix(Vol.df$Fed_Funds_Rate, Vol.df$Vix)
+clusters_rough_test1 <- kmeans(test, centers=4, nstart=25)
+
+fviz_cluster(clusters_rough_test1, geom = "point", data = test, ggtitle("k = 2"))
 
 k11 <- kmeans(Vol.df.2, centers = 11, nstart = 25)
 k7 <- kmeans(Vol.df.2, centers = 7, nstart = 25)
@@ -534,7 +552,7 @@ p11 <- fviz_cluster(k11, geom = "point",  data = Vol.df.2) + ggtitle("k = 5")
 
 
 library(gridExtra)
-grid.arrange(p4, p5, p6, p7, nrow = 2)
+grid.arrange(p2, p3, p4, p5, nrow = 2)
 
 
 Vol.df.2 %>%
