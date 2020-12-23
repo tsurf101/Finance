@@ -13,8 +13,9 @@ The process of building a cash flow model
     - (Always run at 0 CPR, O defaults as the bare minimum). Run at least 5/10 scenarios. If you can tie out to WALS you are gold. 
 
 
-- A mortgage's expected monlthly payment can be thought of as a discounted geomertric series mutipled by the loan amount. 
-  - The summation of the geomertric series is then taken and a simplified solution is expressed. 
+- A mortgage's expected monthly payment can be thought of as a discounted geometric series multiplied by the loan amount. 
+  - The summation of the geometric series is then taken and a simplified solution is expressed. 
+
 
 -30/360 Day count function in Excel is DAYS360(start date, end date, method)   **Page 11 of PDF
       A. method = true, if the system is European
@@ -22,9 +23,9 @@ The process of building a cash flow model
 system
 
 
-When it comes to the Asset Cash Flow Generation there are two options to chose from. 
+When it comes to the Asset Cash Flow Generation there are two options to choose from. 
 1). Loan level generation 
-      - Detailed data is avaliable for each asset 
+      - Detailed data is available  for each asset 
 2). Representative line generation 
       - A representative line can be thought of as an aggregation of similar loan’s attributes as
 a single loan or line of information.
@@ -32,7 +33,7 @@ a single loan or line of information.
 At the most basic level, the assets in a structured finance transaction can either remain the same in a definitive
 pool or they can revolve. 
 1) With a definitive pool, the most preferred method of asset amortization is a loan level analysis where each individual asset is amortized based on the asset’s individual characteristics.
-      -A definitive pool means that the assets that the transaction start with are only the assets availabele to the transaction. 
+      -A definitive pool means that the assets that the transaction start with are only the assets available to the transaction. 
 2) A representative line methodology is more appropriate when assets are revolving. 
       -A revolving structure is the other form in which assets can be financed.
       -This means that assets can be added to a pool as the transaction continues throughout time.
@@ -46,7 +47,7 @@ prepayments, defaults, and recoveries. Later, prepayments, defaults, and recover
 will use the notional schedule to calculate the actual amortization schedule.
 
 -The typical interest rate vector will be a projected curve
-of some type and can be obtained a number of ways. Usually a forward
+of some type and can be obtained a number of ways. Usually, a forward
 curve analysis from Bloomberg is sufficient. 
 To meet ratings criteria, a stressed curve constructed by the ratings
 agencies should be used.
@@ -59,12 +60,12 @@ balance–Period n scheduled principal payment)
 ----CPR (Conditional Prepayment Rate) - The most basic definition of CPR is that it
 is an annualized calculation of SMM.   CPR = 1 − (1 − SMM)^12
 
-----PSA (Public Securities Association) - hisotrial data on preyment data on mortgages
-This is pretty much a predetermined prepament model by the PSA
+----PSA (Public Securities Association) - historical data on prepayment data on mortgages
+This is pretty much a predetermined prepayment model by the PSA
 
 ----ABS (Absolute Prepayment Speed) - ABS = 100∗SMM/(100 + SMM∗(n − 1))
       n = # of periods that have transpired since origination 
-      More appropriate measure of prepayment for shorter term asssets such as auto loans
+      More appropriate measure of prepayment for shorter term assets such as auto loans
  
 -Institutional investors often purchase asset-backed securities with certain tenors and returns in mind. 
 Prepayments can drastically affect the weighted average life of a transaction and can reduce the overall interest paid,
@@ -78,7 +79,7 @@ in the notional schedule multiplied by the monthly prepayment rate (SMM in our c
 -As loans approach their final periods they will have to be cleaned up. Defaults take precedence
 in calculations since it is assumed that a defaulted loan will not voluntarily prepay.
 
--When "average" comes up, using the "weighted average.." is more accruate than a mean due to various loan balances, seasoning,
+-When "average" comes up, using the "weighted average." is more accurate than a mean due to various loan balances, seasoning,
 yields, etc. in pools
 
 
@@ -109,23 +110,23 @@ takes into account that losses on new originations may not happen immediately an
 -Timing - How much loss has been taken by a certain point in time, end at the final maturity of the assets 
 -Loss timing can huge impacts on a model(please see page 90/221)
   - Front Loading impacts excess spread. 
-  - Example, if a transaction was modeled with a regular loss curve and losses were actaully back-loaded, triggers and 
+  - Example, if a transaction was modeled with a regular loss curve and losses were actually back-loaded, triggers and 
   reserve accounts might be inadequate to protect the back-loaded loss
 ***WAC Loss Curve can be used as a projected loss curve if no trend is evident and there are years of data 
 
 
--Deliquency is not considered a default 
+-Delinquency is not considered a default 
 
 -A complete timing curve should always equal 100%
 
 -you can create your own loss or use a preexisting loss curve would be better. For example, Standard Default Assumption (SDA), 
-curves are great proxies to determine loss for mortgage prodcuts and ossaionally other long term assets.
- --- Further more, the most basica SDA curve is 100% SDA (look up graph online, this is a simple graph, nothing complex)
+curves are great proxies to determine loss for mortgage products and occasionally other long-term assets.
+ --- Furthermore, the most basic SDA curve is 100% SDA (look up graph online, this is a simple graph, nothing complex)
  --- Multiplying or dividing the values of the 100% curve creates variations of the curve. So a 50 percent SDA curve contains 1/2 of
      the values for each 
 period of the 100 percent curve, while a 200% SDA curve contains 2x the values for each period of the 100% curve.
 
--SDA curves are constructured with annual defualt rates so for a general majority of models we would need to convert that rate
+-SDA curves are constructed with annual default  rates so for a general majority of models we would need to convert that rate
  to a monthly default rate
  --formula is simple but also can be found on page 101/221
 
@@ -135,47 +136,46 @@ period of the 100 percent curve, while a 200% SDA curve contains 2x the values f
 
 Chapter 5 - Recoveries
 - Net less = Gross Loss amount - Recovery amount
-- Recovery rate = Recovery amount/Grodd Loss amount
-- Loss Severirty = Net less/ Gross loss amount
+- Recovery rate = Recovery amount/Gross Loss amount
+- Loss Severity  = Net less/ Gross loss amount
 ** Recovery Rate and Loss Severity are inverse concepts 
 - Recovery lag is the length of tie it takes from the default date to the recovery of actual cash
-- Lidquidation expenses are always very significant expenses 
-- Cost of carry is defined as when a loan is considered defaulted there is an interest cost to the ousanding loan until
-the asset is liduidated and cash is received. (this is not reported at times)
+- Liquidation expenses are always very significant expenses 
+- Cost of carry is defined as when a loan is considered defaulted there is an interest cost to the outstanding loan until
+the asset is liquidated and cash is received. (this is not reported at times)
 -An important point about recoveries is that they are included as cash flow for the
 waterfall, but do not amortize the asset principal.
 
 
 Chapter 6 - Liabilities and the Cash Flow Waterfall
 -For Structured transactions, any cost that is to be paid from the cash generated by the assets is a liability. 
--"Watefall" can be found in the "priority of payments" section in a term sheet
+-"Waterfall" can be found in the "priority of payments" section in a term sheet
 -Credit enhancement is used to mitigate risk 
 - Principal - "Pro Rata" means principal is paid proportionately 
             - "Sequential", principal is first to the senior notes 
 
-Why are new defaults included in the "debt principal due" calculation
+Why are new defaults included in the "debt principal due" calculation?
       - One of the forms of risk mitigation: using excess cash or spread to cover loss. 
-      - Debt has access to prepayments and scheduled amortiization, which provide cash to the waterfall, but 
-      defaults are noncash generatings amounts. 
+      - Debt has access to prepayments and scheduled amortization, which provide cash to the waterfall, but 
+      defaults are noncash generating amounts. 
 
 Most transactions are structured so the assets generate more interest than is due to fees and debt interest. 
-    -Officiall known as Excess Spread
-If there is no excess spread then other sources of credit enchancements are necessary to cover the defaulted amount
-
+    -Officially known as Excess Spread
+If there is no excess spread then other sources of credit enhancements are necessary to cover the defaulted amount
 
 Chapter 7 - Advanced Liability Structures 
 -Loss Protection is the single most important reason for advanced liability structures 
-- Always look out for triggers in transcations, they could have a powerful impact on the cashflow. 
-- Can use triggers to my prefance in order to win business and lower cost of financings ***** 
--Page 129/221 gives several examples of triggers such as "Negative excess spread", "Deliquency", "Rolling average triggers", etc.
--Only triggers that need to be modeled are the ones that can be breached when the cash flow is stressed.
+- Always look out for triggers in transactions, they could have a powerful impact on the cashflow. 
+- Can use triggers to my preface in order to win business and lower cost of financings ***** 
+- Page 129/221 gives several examples of triggers such as "Negative excess spread", "Delinquency", "Rolling average triggers", etc.
+- Only triggers that need to be modeled are the ones that can be breached when the cash flow is stressed.
 -For most general transactions, Cumulative Default Percentage is going to be the current period's dollar 
-default amount divided by the original balance. AND in order to make it cumulative, you add the prior period'defaulted percentage.
+default amount divided by the original balance. AND in order to make it cumulative, you add the prior periods defaulted percentage.
 -Interest rate swaps are the most commonly used type of swap in a structured transaction
       - All of the amounts are calculated off a notional amortization schedule 
-      - Ex/ Sumple fixed-for-floating interest rate swap 
--Reverve Accounts 
-  -Easiest form of credit enchancement 
+      - Ex/ Simple fixed-for-floating interest rate swap 
+-Reserve Accounts 
+  -Easiest form of credit enhancement 
   -Accounts set aside for payments when we have shortfalls. 
   -If the deal has an amortizing reserve, the amount will decrease as the asset pool balance decreases 
   -Calculating reimbursements is one the more complicated parts of modeling reserve accounts.
@@ -183,19 +183,19 @@ default amount divided by the original balance. AND in order to make it cumulati
 
 Chapter 8 
 -Performance Analytics
-  -A majirty of parties in a transaction are primarly concerned with yield, loss, and timing of cash flows
+  -A majority of parties in a transaction are primarily concerned with yield, loss, and timing of cash flows
     -This can be determined by calculating monthly yield, bond equivalent yield, duration, and WAL calculations
   -Monthly Yield 
     -Used to calculate bond equivalent yield
-    -The disocunt rate that makes the present value of all the cash flow from the asset or to the debt equivalent to the
+    -The discount rate that makes the present value of all the cash flow from the asset or to the debt equivalent to the
      initial principal balance.
-    -For assets, the cashflow that is counted is the 1)yield 2)scheduled amrtization 3)voluntary prepayments 4)recovered principal
-    -For debt, the casfhlow that is counted is the 1)interest 2)principal
+    -For assets, the cashflow that is counted is the 1) yield 2) scheduled amortization 3) voluntary prepayments 4) recovered principal
+    -For debt, the cashflow that is counted is the 1) interest 2)principal
     -The monthly yield should change until the Present Value difference = 0 
-  -Assets - DCF is calculated by summing the voluntary prepayments, amortiization, interest, and receoveries
-      & then divded by the assumed monthly yield raised to the period
+  -Assets - DCF is calculated by summing the voluntary prepayments, amortization, interest, and recoveries
+      & then divided by the assumed monthly yield raised to the period
   -Debt - DCF is the same as above by we are summing only interest & principal now
-  -Bond-equivalent yield (BEY), which can be thoguht of as annual yield. There is disagreement between which
+  -Bond-equivalent yield (BEY), which can be thought of as annual yield. There is disagreement between which
    is the best annual yield measure
   -Modified Duration - Duration is a measure of a bond value's sensitivity to rate changes
         -Officially defined by fabozzi as "the approximate percentage change in value for 100 basis point change in rates"
@@ -205,23 +205,23 @@ Chapter 8
          PVCF_t = present value of the cash flow in period t discounted by the yield
   -According to the Fabozzi book, Modified duration (and Macaulay) duration are typically poor measures because
    they assume that when interest rates change, 
-the cash flow(in particular, prepayments) do not change.
-  -FYI: Effective durations( AKA Option-Adjusted duration) is derived using Monte Carlo simulation for obtaining
+the cash flow (in particular, prepayments) do not change.
+  -FYI: Effective durations (AKA Option-Adjusted duration) is derived using Monte Carlo simulation for obtaining
    the new prices when interest rates change.
-
 
 Analytics
 -Cash In - all cash that is available to pay liabilities
-  - Pretty much consists of voluntary perpayments, scheduled asset amortization, asset yield, recoveries from defaulted assets,
+  - Pretty much consists of voluntary prepayments, scheduled asset amortization, asset yield, recoveries from defaulted assets,
   swap flows in, and cash from the reserve account 
 -Cash Out - Liabilities
 
--A Summary Sheet is great addition to a model as it can quickly report the scenario assumptions were, give a cash flow snpashot,
+-A Summary Sheet is great addition to a model as it can quickly report the scenario assumptions were, give a cash flow snapshot,
 and provide any relevant graphs. 
--WAL calculations does not rely on discounted cash flows, instead a WAL is a calculation based on the amortizaiton
+-WAL calculations does not rely on discounted cash flows, instead a WAL is a calculation based on the amortization
 of the assets and liabilities over time. 
 
 Useful Excel Function
 -"AND" - returns a TRUE value if ALL the conditions in the formula are true
--"OR" - returns a TRUE value if ANY of the conditions in the formula are ture
+-"OR" - returns a TRUE value if ANY of the conditions in the formula are true
 -GOAL FINDER
+
